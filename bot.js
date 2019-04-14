@@ -1,7 +1,7 @@
 const Discord  = require('discord.js');
 const client     = new Discord.Client();
 const prefix   = "#";
-const category = "556112478673829889";
+const category = "567006568051376138";
 const devs     = ["472413769700474901"];
 let ticc   = true;
 let tchannels  = [];
@@ -11,7 +11,7 @@ client.login(process.env.Dream_TOKEN);
 
 client.on('ready',async () => console.log(`   - " ${client.user.username} " , Tickety is ready to work.`));
 client.on('message',async message => {
-    const emojis   = { yes: `${client.guilds.find(r => r.id === '555722861931659278').emojis.find(e => e.name === 'Yes')}`, wrong: `${client.guilds.find(r => r.id === '555722861931659278').emojis.find(e => e.name === 'Wrong')}` };
+    const emojis   = { yes: `${client.guilds.find(r => r.id === '566187495348371466').emojis.find(e => e.name === 'Yes')}`, wrong: `${client.guilds.find(r => r.id === '555722861931659278').emojis.find(e => e.name === 'Wrong')}` };
     if(message.author.bot || message.channel.type === 'dm') return;
     let args = message.content.split(" ");
     let author = message.author.id;
